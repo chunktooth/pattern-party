@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+}
+
+.accordion {
+  margin: 0 auto;
+}
+
+.accordion-list {
+  padding: 50px;
+}
+
+.tab-list {
+  display: inline;
+  list-style: none;
+}
+
+.tab-anchor {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.tab-anchor.active {
+  border: solid 1px #CCC;
+  border-bottom: solid 3px #FFF;
+}
+
+.tab-content {
+  display: none;
+  float: left;
+}
+
+.tab-content.show {
+  border: solid 1px #CCC;
+  padding: 50px 20px;
+  width: 100%;
+}
