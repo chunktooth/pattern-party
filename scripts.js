@@ -1,9 +1,9 @@
 $(document).ready(function() {
   $('.accordion-list').each(function(index) {
     $(this)
-    .find('li').first()
-    .find('a').addClass('active')
-    .next().addClass('show').show()
+      .find('li').first()
+      .find('a').addClass('active')
+      .next().addClass('show').show()
   });
 
   $('.accordion-list').on('click', '.tab-anchor', function(event) {

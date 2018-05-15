@@ -1,13 +1,48 @@
 body {
   font-family: sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #2D2334;
+}
+
+h1 {
+  margin: 0;
+  padding: 10px 70px;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  color: #FFFFFF;
+}
+
+h1,
+h4 {
+  display: inline-block;
+  color: #FFFFFF;
+}
+
+h4 {
+  padding: 5px 70px;
+  float: right;
+}
+
+span.blue-text {
+  color: #66CED0;
 }
 
 .accordion {
   margin: 0 auto;
 }
 
+h3 {
+  margin: 45px 70px 0;
+}
+
+h3, hr {
+  display: inline-block;
+}
+
 .accordion-list {
-  padding: 50px;
+  padding: 30px 113px;
 }
 
 .tab-list {
@@ -17,23 +52,51 @@ body {
 
 .tab-anchor {
   display: inline-block;
+  width: 23%;
+  background-color: #F2F2F2;
+  text-align: center;
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
 }
 
 .tab-anchor.active {
+  background-color: #FFF;
   border: solid 1px #CCC;
-  border-bottom: solid 3px #FFF;
+  border-bottom-color: #FFFFFF;
+  text-decoration: none;
+}
+
+.tab-anchor:active {
+  text-decoration: none;
 }
 
 .tab-content {
   display: none;
   float: left;
+  border: solid 1px #CCC;
+  border-top: none;
 }
 
 .tab-content.show {
-  border: solid 1px #CCC;
-  padding: 50px 20px;
-  width: 100%;
+  padding: 30px 20px;
+  width: 97%;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.wireframe-box {
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+
+.sagan-ipsum {
+  display: inline-block;
+  width: 68%;
+  padding-left: 20px;
 }
