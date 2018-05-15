@@ -30,6 +30,14 @@ span.blue-text {
   color: #66CED0;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
 .accordion {
   margin: 0 auto;
 }
@@ -70,9 +78,8 @@ span.blue-text {
   display: inline-block;
   width: 23.16%;
   background-color: #F2F2F2;
+  color: #666666;
   text-align: center;
-  text-decoration: none;
-  font-weight: bold;
   padding: 9px;
 }
 
@@ -80,11 +87,7 @@ span.blue-text {
   background-color: #FFF;
   border: solid 1px #CCC;
   border-bottom-color: #FFFFFF;
-  text-decoration: none;
-}
-
-.tab-anchor:active {
-  text-decoration: none;
+  font-weight: bold;
 }
 
 .tab-content {
@@ -126,11 +129,14 @@ span.blue-text {
   padding-left: 20px;
 }
 
+footer {
+  text-align: center;
+}
+
 .codepen-btn {
-  position: relative;
+  margin: 50px 0;
   padding: 10px 100px;
   font-size: 20px;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   color: #FFFFFF;
-
 }
