@@ -33,13 +33,27 @@ span.blue-text {
   margin: 0 auto;
 }
 
+.horizontal-line,
+.pattern-types {
+  display: inline-block;
+}
+
 .horizontal-line {
+  position: relative;
+  right: -73px;
+  width: 90%;
   border-bottom: solid 1px #C2C2C2;
 }
 
 .pattern-types {
+  position: relative;
+  top: 10px;
+  left: -108px;
   margin: 45px 70px 0;
+  padding: 0px 38px;
+  background-color: #FFFFFF;
   color: #191919;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
 .accordion-list {
