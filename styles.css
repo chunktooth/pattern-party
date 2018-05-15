@@ -33,12 +33,13 @@ span.blue-text {
   margin: 0 auto;
 }
 
-h3 {
-  margin: 45px 70px 0;
+.horizontal-line {
+  border-bottom: solid 1px #C2C2C2;
 }
 
-h3, hr {
-  display: inline-block;
+.pattern-types {
+  margin: 45px 70px 0;
+  color: #191919;
 }
 
 .accordion-list {
