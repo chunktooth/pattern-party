@@ -66,12 +66,14 @@ a:visited {
   font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
-.accordion-list {
-  padding: 35px;
-}
-
 ul {
   padding: 0;
+}
+
+.accordion-list {
+  box-sizing: border-box;
+  padding: 35px;
+  width: 100%;
 }
 
 .tab-list {
@@ -81,11 +83,12 @@ ul {
 
 .tab-anchor {
   display: inline-block;
-  width: 23.16%;
+  /*width: 23.16%;*/
   background-color: #F2F2F2;
   color: #666666;
   text-align: center;
-  padding: 9px;
+  /*padding: 1em 0.56em;*/
+  padding: 10px 10.71%;
 }
 
 .tab-anchor.active {
@@ -98,13 +101,13 @@ ul {
 .tab-content {
   display: none;
   float: left;
+  padding: 30px 20px;
   border: solid 1px #CCC;
   border-top: none;
 }
 
 .tab-content.show {
-  padding: 30px 20px;
-  width: 96.3%;
+  /*padding: 30px 20px;*/
 }
 
 .flex-wrapper {
