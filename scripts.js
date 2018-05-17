@@ -28,9 +28,5 @@ $(document).ready(function() {
       $(this).addClass('active');
     }
   });
-
-  $('.codepen-btn').on('click', function() {
-    
-  })
 });
 
