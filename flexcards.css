@@ -1,7 +1,38 @@
 .cards-wrapper {
-  padding: 35px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+  padding: 65px 40px 0 40px;
+  width: 100%;
+}
+
+.card-header {
+  border-bottom: solid 1px #ccc;
+  padding: 0 0 15px 15px;
+  margin: 20px 0 0;
+}
+
+.all-cards {
+  margin: 15px;
+  border: solid 1px #CCC;
+}
+
+.wireframe-card {
+  width: 100%;
+  height: 305px;
 }
 
 .card-1 {
-  border: solid 1.5px #CCC;
+  border: solid 1px #CCC;
+  width: 64%;
+}
+
+.card-2, 
+.card-3, 
+.card-4, 
+.card-5 {
+  width: 30%;
 }
