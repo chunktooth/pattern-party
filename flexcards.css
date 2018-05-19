@@ -1,0 +1,53 @@
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+  padding: 65px 40px 0 40px;
+  width: 100%;
+}
+
+.card-header {
+  border-bottom: solid 1px #ccc;
+  padding: 0 0 15px 15px;
+  margin: 20px 0 0;
+  font-size: 20px;
+}
+
+.all-cards {
+  flex-grow: 1;
+  margin: 19px;
+  border: solid 1px #CCC;
+}
+
+.wireframe-card {
+  width: 100%;
+  height: 264px;
+}
+
+.card-1, 
+.card-7 {
+  width: 63%;
+}
+
+.card-1 {
+  margin: 15px 0 15px 15px;
+}
+
+.card-7 {
+  margin: 15px 15px 15px 0;
+}
+
+.card-2, 
+.card-3, 
+.card-4, 
+.card-5,
+.card-6 {
+  width: 30%;
+}
+
+@media screen and (max-width: 1419px) {
+
+}
