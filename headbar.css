@@ -3,11 +3,15 @@
   width: 100%;
 }
 
-nav {
+nav,
+.nav-menu {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+}
+
+nav {
+  justify-content: center;
   width: 100%;
   height: 150px;
   background: #C2C2C2;
@@ -31,9 +35,16 @@ nav {
 }
 
 .nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 50%;
 }
 
 .search-bar {
   width: 30%;
+}
+
+.navlinks {
+
 }
