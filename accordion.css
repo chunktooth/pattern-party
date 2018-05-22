@@ -83,11 +83,6 @@ ul {
 }
 
 @media screen and (max-width: 1010px) {
-  .accordion,
-  .flexcards {
-    padding: 0 25px;
-  }
-
   .flex-wrapper {
     justify-content: center;
   }
@@ -123,11 +118,6 @@ ul {
   h4 {
     padding: 13px;
     float: right;
-  }
-
-  .accordion,
-  .flexcards {
-    padding: 0 5px;
   }
   
   .accordion-list,

@@ -76,3 +76,18 @@ footer {
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   color: #FFFFFF;
 }
+
+@media screen and (max-width: 1010px) {
+  .accordion,
+  .flexcards,
+  .headbar {
+    padding: 0 25px;
+  }
+
+@media screen and (max-width: 608px) {
+  .accordion,
+  .flexcards,
+  .headbar {
+    padding: 0 5px;
+  }
+}

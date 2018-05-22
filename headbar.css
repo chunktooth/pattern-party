@@ -8,8 +8,8 @@ nav {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-end;
+  box-sizing: border-box;
   width: 100%;
-  height: 150px;
   background: #D1D2D3;
 }
 
@@ -35,6 +35,7 @@ nav {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
+  box-sizing: border-box;
   width: 65%;
 }
 
@@ -68,4 +69,54 @@ nav {
   position: absolute;
   right: 20px;
   width: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+  .logo {
+    width: 10%;
+  }
+
+  .nav-menu {
+    width: 60%;
+  }
+
+  .search-bar {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .logo,
+  .nav-menu,
+  .search-bar {
+    width: 33.33%;
+  }
+
+  .nav-menu {
+    flex-direction: column; 
+  }
+}
+
+@media screen and (max-width: 888px) {
+
+  .header-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo,
+  .nav-menu,
+  .search-bar {
+    text-align: center;
+    width: 100%;
+  }
+
+  .search-input {
+    margin: 25px 0;
+  }
 }
