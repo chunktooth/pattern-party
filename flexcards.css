@@ -49,5 +49,10 @@
 }
 
 @media screen and (max-width: 575px) {
-
+  .card-2, 
+  .card-3, 
+  .card-4, 
+  .card-5 {
+  width: 100%;
+  }
 }
