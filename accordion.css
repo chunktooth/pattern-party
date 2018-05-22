@@ -47,13 +47,11 @@ ul {
 
 .image-wrapper {
   width: 30%;
-  text-align: center;
 }
 
 .wireframe-box {
   width: 350px;
   height: 350px;
-  margin: auto;
 }
 
 .sagan-ipsum {
@@ -83,43 +81,17 @@ ul {
 }
 
 @media screen and (max-width: 1010px) {
-  .flex-wrapper {
-    justify-content: center;
-  }
-
-  h1 {
-    padding: 10px;
-  }
-
-  h4 {
-    padding: 5px 10px;
-  }
-
   .sagan-ipsum {
     width: 100%;
   }
+
+ .image-wrapper {
+    width: 100%;
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 608px) {
-  header, h4 {
-    margin: auto 0;
-  }
-
-  h1 {
-    margin: 0;
-    padding: 0 10px;
-  }
-
-  h1,
-  .accordion-list {
-    padding: 0;
-  }
-
-  h4 {
-    padding: 13px;
-    float: right;
-  }
-  
+@media screen and (max-width: 608px) {  
   .accordion-list,
   .sagan-ipsum {
     width: 100%;
