@@ -70,17 +70,13 @@ ul {
   border-bottom: solid 1px #C2C2C2;
 }
 
-@media screen and (max-width: 1434px) {
-  .tab-anchor {
-    width: 4%;
-  }
-
-  .tab-content {
-    border-top: solid 1px #CCC;
-  }
+@media screen and (max-width: 1172px) {
+ .tab-anchor {
+  width: 20.3%;;
+ }
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 878px) {
   .sagan-ipsum {
     width: 100%;
   }
