@@ -18,7 +18,7 @@
 
 .all-cards {
   flex-grow: 1;
-  margin: 19px;
+  margin: 15px;
   border: solid 1px #CCC;
 }
 
@@ -30,14 +30,6 @@
 .card-1, 
 .card-7 {
   width: 63%;
-}
-
-.card-1 {
-  margin: 15px 0 15px 15px;
-}
-
-.card-7 {
-  margin: 15px 15px 15px 0;
 }
 
 .card-2, 

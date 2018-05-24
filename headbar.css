@@ -1,4 +1,5 @@
 .header-wrapper {
+  box-sizing: border-box;
   padding: 65px 40px 0 40px;
   width: 100%;
 }
@@ -98,7 +99,6 @@ nav {
 }
 
 @media screen and (max-width: 888px) {
-
   .header-wrapper {
     padding-left: 0;
     padding-right: 0;
