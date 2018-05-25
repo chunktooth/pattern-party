@@ -1,31 +1,23 @@
-$(document).ready(function() {
-  $('.accordion-list').each(function(index) {
-    $(this)
-      .find('li').first()
-      .find('a').addClass('active')
-      .next().addClass('show').show()
-  });
+let activeTab = 1;
 
-  $('.accordion-list').on('click', '.tab-anchor', function(event) {
-    event.preventDefault();
-    let tabMenu = $(this).closest('.accordion-list'); 
+ if($('.tab-list:last-child').hasClass('active'))
+    activeTab=1;
+  else
+    activeTab++;
+ 
+$('.tab-list:last-child('+activeTab+') > a').trigger('click');
 
-    if(!$(this).hasClass('active')) {
-      tabMenu
-        .find('.show')
-        .removeClass('show')
-        .hide()
+$('.tab-content').hide();
 
-      $(this)
-        .next()
-        .toggleClass('show')
-        .toggle();
+$('.tab-list:first')
+  .addClass('active')
+  .show();
 
-      tabMenu
-        .find('.active')
-        .removeClass('active');
+$('.tab-content:first')
+  .show();
 
-      $(this).addClass('active');
-    }
-  });
+$('.tab-list').on('click', function() {
+  $('.tab-list').removeClass('active');
+  $(this).toggleClass('active');
+  $('.tab-content').hide();
 });

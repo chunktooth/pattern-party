@@ -1,38 +1,59 @@
-ul {
-  padding: 0;
-}
-
 .accordion-list {
   box-sizing: border-box;
-  padding: 35px 40px;
+  padding: 0 40px;
   width: 100%;
+  overflow: hidden;
+}
+
+ul.tabs {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  height: 33px; 
+  line-height: 32px;
+  width: 104%
 }
 
 .tab-list {
-  display: inline;
-  list-style: none;
-}
-
-.tab-anchor {
-  display: inline-block;
-  background-color: #F2F2F2;
-  color: #666666;
-  width: 21.4%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  width: 24.03%;
   text-align: center;
-  padding: 10px 20px;
+  background-color: #F2F2F2;
+  border-bottom: solid 1px #CCC;
 }
 
-.tab-anchor.active {
-  background-color: #FFF;
+.tab-list.active {
   border: solid 1px #CCC;
-  border-bottom-color: #FFFFFF;
+  border-bottom: solid 1px #FFF;
+  background-color: #FFF;
   font-weight: bold;
 }
 
+.tab-anchor {
+  display: block;
+  padding: 10px;
+  outline: none;
+  text-decoration: none;
+  font-size: 17px;
+  color: #000;
+}
+
+.expand {
+  position: relative;
+  opacity: 0;
+  font-size: 25px
+  font-weight: bold;
+  color: #CCC;
+}
+
 .tab-content {
-  display: none;
   float: left;
-  padding: 30px 20px;
+  padding: 45px 20px 20px;
   border: solid 1px #CCC;
   border-top: none;
 }
@@ -70,12 +91,6 @@ ul {
   border-bottom: solid 1px #C2C2C2;
 }
 
-@media screen and (max-width: 1172px) {
- .tab-anchor {
-  width: 20.3%;;
- }
-}
-
 @media screen and (max-width: 878px) {
   .sagan-ipsum {
     width: 100%;
@@ -91,11 +106,41 @@ ul {
   .accordion-list,
   .sagan-ipsum {
     width: 100%;
-    padding: 5px;
     text-align: justify;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .accordion-list {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .tab-list {
+    width: 96.1%;
+  }
+
+  .tab-list.active {
+    font-weight: bold;
+    background: white;
+    border: solid 1px #CCC;
   }
 
   .tab-anchor {
-    width: 93%;
+    position: relative;
+    right: 40%;
+  }
+
+  .expand {
+    opacity: 1;
+    left: 79%;
+  }
+
+  .tab-content {
+    padding: 0;
+  }
+
+  .sagan-ipsum {
+    width: 96%;
   }
 }
