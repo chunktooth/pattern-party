@@ -64,8 +64,7 @@ header .horizontal-line {
 
 .pattern-types {
   position: relative;
-  top: 11px;
-  margin: 45px -37px 0;
+  top: 31px;
   padding: 0px 38px;
   background-color: #FFFFFF;
   color: #191919;
@@ -92,6 +91,12 @@ footer {
   }
 
 @media screen and (max-width: 555px) {
+  .accordion,
+  .flexcards,
+  .headbar {
+    padding: 0 5px;
+  }
+
   header {
     text-align: center;
   }
@@ -115,14 +120,12 @@ footer {
   }
 
   .pattern-types {
-    top: 0;
-    left: 36%;
-    margin: 65px auto 0px;
-    padding: 0;
+    display: block;
+    text-align: center;
   }
 
   .horizontal-line {
     width: 18%;
-    margin: 20px auto 60px
+    margin: 41px auto 60px;
   }
 }
