@@ -116,6 +116,7 @@ nav {
   }
 
   .search-input {
+    margin: 25px 0;
     width: 95%;
   }
 }
@@ -136,10 +137,6 @@ nav {
   .search-bar {
     text-align: center;
     width: 90%;
-  }
-
-  .search-input {
-    margin: 0;
   }
 }
 
@@ -185,6 +182,7 @@ nav {
   }
 
   .search-input {
+    margin: 0;
     padding: 10px 4px;
   }
 }
