@@ -21,6 +21,13 @@ nav {
   padding: 30px;
 }
 
+.menu {
+  position: absolute;
+  visibility: hidden;
+  color: #6B6B6B;
+  font-size: 30px;
+}
+
 .logo,
 .nav-menu,
 .search-bar {
@@ -28,7 +35,8 @@ nav {
 }
 
 .logo {
-  width: 11%;
+  width: 15%;
+  text-align: center;
 }
 
 .nav-menu {
@@ -37,7 +45,8 @@ nav {
   flex-direction: row;
   justify-content: space-evenly;
   box-sizing: border-box;
-  width: 65%;
+  color: #6B6B6B;
+  width: 55%;
 }
 
 .search-bar {
@@ -78,23 +87,37 @@ nav {
   }
 
   .nav-menu {
-    width: 60%;
+    width: 65%;
   }
 
   .search-bar {
-    width: 30%;
+    width: 25%;
   }
 }
 
-@media screen and (max-width: 1160px) {
-  .logo,
-  .nav-menu,
-  .search-bar {
-    width: 33.33%;
+@media screen and (max-width: 1175px) {
+  nav {
+    flex-direction: column;
   }
 
-  .nav-menu {
-    flex-direction: column; 
+  .logo {
+    margin: auto;
+    width: 50%;
+  }
+
+  .nav-menu,
+  .search-bar {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .wireframe-logo,
+  .menu {
+    display: inline-block;
+  }
+
+  .search-input {
+    width: 92%;
   }
 }
 
@@ -113,10 +136,42 @@ nav {
   .nav-menu,
   .search-bar {
     text-align: center;
-    width: 100%;
+    width: 90%;
   }
 
   .search-input {
-    margin: 25px 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .logo,
+  .nav-menu,
+  .search-bar {
+    flex-direction: column;
+    text-align: left;
+    margin: 0;
+    width: 96%;
+  }
+
+  .logo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu {
+    position: relative;
+    visibility: visible;
+    padding: 50px 25px;
+  }
+
+  .navlinks {
+    padding: 5px;
+  }
+
+  .search-input {
+    padding: 10px 13px;
   }
 }
