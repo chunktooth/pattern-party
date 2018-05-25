@@ -28,13 +28,13 @@ nav {
   font-size: 30px;
 }
 
-.logo,
+.menu-header,
 .nav-menu,
 .search-bar {
   display: inline-block;
 }
 
-.logo {
+.menu-header {
   width: 15%;
   text-align: center;
 }
@@ -82,7 +82,7 @@ nav {
 }
 
 @media screen and (max-width: 1300px) {
-  .logo {
+  .menu-header {
     width: 10%;
   }
 
@@ -100,7 +100,7 @@ nav {
     flex-direction: column;
   }
 
-  .logo {
+  .menu-header {
     margin: auto;
     width: 50%;
   }
@@ -132,7 +132,7 @@ nav {
     align-items: center;
   }
 
-  .logo,
+  .menu-header,
   .nav-menu,
   .search-bar {
     text-align: center;
@@ -141,7 +141,7 @@ nav {
 }
 
 @media screen and (max-width: 666px) {
-  .logo,
+  .menu-header,
   .nav-menu {
     flex-direction: column;
     text-align: left;
@@ -149,7 +149,7 @@ nav {
     width: 100%;
   }
 
-  .logo {
+  .menu-header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -159,11 +159,13 @@ nav {
   .menu {
     position: relative;
     visibility: visible;
-    padding: 44px 26px;
+    padding: 35px 26px;
   }
 
   .wireframe-logo {
-    padding: 23px;
+    width: 75px;
+    height: 75px;
+    padding: 17px;
   }
 
   .nav-menu {

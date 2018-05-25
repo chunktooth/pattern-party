@@ -1,5 +1,4 @@
-$('.logo').on('click', function() {
+$('.menu-header').on('click', function() {
   $('.nav-menu, .search-bar')
   .toggleClass('hidden-menu');
-  // $('.search-bar').toggleClass('hidden-menu');
 });
