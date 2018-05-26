@@ -81,6 +81,7 @@ ul.tabs {
 
 @media screen and (max-width: 878px) {
   .sagan-ipsum {
+    padding: 0;
     width: 100%;
   }
 
@@ -111,6 +112,7 @@ ul.tabs {
   .tab-list {
     margin: 1px;
     width: 96.1%;
+    border-bottom: none;
   }
 
   .tab-list.active {
@@ -123,7 +125,6 @@ ul.tabs {
   .tab-list p {
     float: left;
     padding: 6px 21px;
-    border-bottom: none;
   }
 
   .tab-anchor {
@@ -145,6 +146,6 @@ ul.tabs {
   }
 
   .sagan-ipsum {
-    width: 96%;
+    padding: 0 25px;
   }
 }

@@ -13,7 +13,6 @@ function toggleTabs() {
       $(this).addClass('active');
       displayContent(tabId);
     }
-    expandMenu(tabList);
   });
 }
 
