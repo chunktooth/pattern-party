@@ -75,7 +75,8 @@ ul.tabs {
   border-bottom: solid 1px #C2C2C2;
 }
 
-.tab-list-mobile {
+.tab-list-mobile,
+.hidden {
   display: none;
 }
 
@@ -117,6 +118,7 @@ ul.tabs {
     margin: -1px;
     width: 100%;
     background-color: #F2F2F2;
+    color: #666666;
     font-size: 20px;
     border-bottom: none;
     border: solid 1px #F2F2F2;
@@ -134,7 +136,7 @@ ul.tabs {
 
   .tab-list-mobile p {
     float: left;
-    margin: 21px;
+    margin: 24px;
   }
 
   .tab-anchor {
@@ -146,9 +148,9 @@ ul.tabs {
     display: inline-block;
     float: right;
     margin: 21px;
-    font-size: 25px;
+    color: #666666;
+    font-size: 23px;
     font-weight: bold;
-    color: #CCC;
   }
 
   .tab-content {

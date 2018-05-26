@@ -1,9 +1,9 @@
-$('.tab-list-pc').on('click', toggleTabs);
 $('.tab-content').hide();
 $('.tab-content:first').show();
+$('.tab-list-mobile:first').addClass('active');
+$('.tab-list-pc').on('click', toggleTabs);
 $('.tab-list-mobile').on('click', expandTabs);
 $('.menu-header').on('click', toggleMenu);
-
 
 function toggleTabs() {
   let tabList = $('.tab-list-pc');
@@ -32,9 +32,10 @@ function displayContent(tabId) {
 
 function expandTabs() { 
   let tabList = $('.tab-list-mobile');
-  
+  let tabId = $(this).attr('id');
+  let tabContent = $('.tab-content');
+
   $(this).toggleClass('active');
-  console.log($(this))
 
   tabList.each(function(i, li) {  
     if($(li).hasClass('active')) {
@@ -44,7 +45,16 @@ function expandTabs() {
       $(this).find('.expand').text('+');
     }
   });
+  expandContent(tabContent, tabId);
 };
+
+function expandContent(tabContent, tabId) {
+   tabContent.each(function(i, article) {
+    if($(article).attr('id') === tabId) {
+      $(article).toggleClass('hidden');
+    }
+  });
+}
   
 function toggleMenu() {
   $('.nav-menu, .search-bar')
