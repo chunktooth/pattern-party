@@ -13,10 +13,10 @@ ul.tabs {
   width: 104%
 }
 
-.tab-list {
+.tab-list-pc {
   position: relative;
   float: left;
-  padding: 6px 0;
+  padding: 15px 0;
   width: 24%;
   text-align: center;
   background-color: #F2F2F2;
@@ -24,15 +24,11 @@ ul.tabs {
   border-bottom: solid 1px #CCC;
 }
 
-.tab-list.active {
+.tab-list-pc.active {
   border: solid 1px #CCC;
   border-bottom: solid 1px #FFF;
   background-color: #FFF;
   font-weight: bold;
-}
-
-.tab-list p {
-  margin: 5px;
 }
 
 .expand {
@@ -79,6 +75,10 @@ ul.tabs {
   border-bottom: solid 1px #C2C2C2;
 }
 
+.tab-list-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 878px) {
   .sagan-ipsum {
     padding: 0;
@@ -104,27 +104,37 @@ ul.tabs {
 }
 
 @media screen and (max-width: 555px) {
+  .tab-list-pc {
+    display: none;
+  }
 
   .accordion-list {
     padding: 0;
   }
 
-  .tab-list {
-    margin: 1px;
-    width: 96.1%;
+  .tab-list-mobile {
+    display: inline-block;
+    margin: -1px;
+    width: 100%;
+    background-color: #F2F2F2;
+    font-size: 20px;
     border-bottom: none;
+    border: solid 1px #F2F2F2;
   }
 
-  .tab-list.active {
-    width: 95.4%;
+  .tab-list-mobile.active {
+    width: 99.9%;
+    margin: 0px;
     font-weight: bold;
     background: white;
     border: solid 1px #CCC;
+    border-left: none;
+    border-right: none;
   }
 
-  .tab-list p {
+  .tab-list-mobile p {
     float: left;
-    padding: 6px 21px;
+    margin: 21px;
   }
 
   .tab-anchor {
@@ -135,7 +145,7 @@ ul.tabs {
   .expand {
     display: inline-block;
     float: right;
-    padding: 6px 21px;
+    margin: 21px;
     font-size: 25px;
     font-weight: bold;
     color: #CCC;
