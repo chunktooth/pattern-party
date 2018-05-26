@@ -13,6 +13,7 @@ function toggleTabs() {
       $(this).addClass('active');
       displayContent(tabId);
     }
+    expandMenu(tabList);
   });
 }
 
@@ -30,6 +31,7 @@ function displayContent(tabId) {
 
 function expandMenu(tabList) {
   tabList.each(function(i, li) {
+    console.log(li)
     if($(li).hasClass('active')) {
       $(this).find('.expand').text('-');
     } else {

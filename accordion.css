@@ -1,7 +1,6 @@
 .accordion-list {
-  border: solid 1px #CCC;
   box-sizing: border-box;
-  padding: 0;
+  padding: 0 50px;
   width: 100%;
   overflow: hidden;
 }
@@ -11,15 +10,12 @@ ul.tabs {
   padding: 0;
   float: left;
   list-style: none;
-  height: 33px; 
-  line-height: 32px;
   width: 104%
 }
 
 .tab-list {
   position: relative;
   float: left;
-  margin: 0;
   padding: 6px 0;
   width: 24%;
   text-align: center;
@@ -35,12 +31,12 @@ ul.tabs {
   font-weight: bold;
 }
 
+.tab-list p {
+  margin: 5px;
+}
+
 .expand {
-  position: relative;
-  opacity: 0;
-  font-size: 35px
-  font-weight: bold;
-  color: #CCC;
+  display: none;
 }
 
 .tab-content {
@@ -94,24 +90,40 @@ ul.tabs {
   }
 }
 
-@media screen and (max-width: 608px) {  
+@media screen and (max-width: 708px) {  
   .accordion-list,
   .sagan-ipsum {
     width: 100%;
     text-align: justify;
   }
+
+  .flex-wrapper {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 555px) {
+
+  .accordion-list {
+    padding: 0;
+  }
+
   .tab-list {
+    margin: 1px;
     width: 96.1%;
   }
 
   .tab-list.active {
-    margin: -1px;
+    width: 95.4%;
     font-weight: bold;
     background: white;
     border: solid 1px #CCC;
+  }
+
+  .tab-list p {
+    float: left;
+    padding: 6px 21px;
+    border-bottom: none;
   }
 
   .tab-anchor {
@@ -120,12 +132,12 @@ ul.tabs {
   }
 
   .expand {
-    opacity: 1;
-    left: 79%;
-  }
-
-  .flex-wrapper {
-    flex-direction: column;
+    display: inline-block;
+    float: right;
+    padding: 6px 21px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #CCC;
   }
 
   .tab-content {
