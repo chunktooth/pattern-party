@@ -1,6 +1,7 @@
 .accordion-list {
+  border: solid 1px #CCC;
   box-sizing: border-box;
-  padding: 0 40px;
+  padding: 0;
   width: 100%;
   overflow: hidden;
 }
@@ -19,10 +20,11 @@ ul.tabs {
   position: relative;
   float: left;
   margin: 0;
-  padding: 0;
-  width: 24.03%;
+  padding: 6px 0;
+  width: 24%;
   text-align: center;
   background-color: #F2F2F2;
+  font-size: 17px;
   border-bottom: solid 1px #CCC;
 }
 
@@ -33,19 +35,10 @@ ul.tabs {
   font-weight: bold;
 }
 
-.tab-anchor {
-  display: block;
-  padding: 10px;
-  outline: none;
-  text-decoration: none;
-  font-size: 17px;
-  color: #000;
-}
-
 .expand {
   position: relative;
   opacity: 0;
-  font-size: 25px
+  font-size: 35px
   font-weight: bold;
   color: #CCC;
 }
@@ -110,16 +103,12 @@ ul.tabs {
 }
 
 @media screen and (max-width: 555px) {
-  .accordion-list {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
   .tab-list {
     width: 96.1%;
   }
 
   .tab-list.active {
+    margin: -1px;
     font-weight: bold;
     background: white;
     border: solid 1px #CCC;
@@ -133,6 +122,10 @@ ul.tabs {
   .expand {
     opacity: 1;
     left: 79%;
+  }
+
+  .flex-wrapper {
+    flex-direction: column;
   }
 
   .tab-content {
