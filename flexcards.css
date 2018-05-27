@@ -5,7 +5,7 @@
   justify-content: space-between;
   box-sizing: border-box;
   position: relative;
-  padding: 65px 40px 0 40px;
+  padding: 0 40px;
   width: 100%;
 }
 
@@ -18,7 +18,7 @@
 
 .all-cards {
   flex-grow: 1;
-  margin: 19px;
+  margin: 15px;
   border: solid 1px #CCC;
 }
 
@@ -32,14 +32,6 @@
   width: 63%;
 }
 
-.card-1 {
-  margin: 15px 0 15px 15px;
-}
-
-.card-7 {
-  margin: 15px 15px 15px 0;
-}
-
 .card-2, 
 .card-3, 
 .card-4, 
@@ -48,6 +40,17 @@
   width: 30%;
 }
 
-@media screen and (max-width: 1419px) {
+@media screen and (max-width: 575px) {
+  .card-2, 
+  .card-3, 
+  .card-4, 
+  .card-5 {
+  width: 100%;
+  }
+}
 
+@media screen and (max-width: 555px) {
+  .cards-wrapper {
+    padding: 0;
+  }
 }
