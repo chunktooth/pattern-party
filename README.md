@@ -1,7 +1,7 @@
 # pattern-party
 #### By [Om Saetehn](https://github.com/chunktooth)
 
-Fully responsive, pattern library for accordion tabs, flexible cards and collapsible navigation menu! Written in jQuery, CSS and HTML. Deployed on Surge http://pattern-guide.surge.sh/
+Fully responsive, pattern library for accordion tabs, flexible cards and collapsible navigation menu! Written in jQuery, CSS and HTML. Published on https://chunktooth.github.io/pattern-party/
 
 #### Screenshots
 ##### Desktop view
