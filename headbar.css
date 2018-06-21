@@ -141,7 +141,6 @@ nav {
 }
 
 @media screen and (max-width: 666px) {
-  .menu-header,
   .nav-menu {
     flex-direction: column;
     text-align: left;
