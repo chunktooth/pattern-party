@@ -6,30 +6,30 @@
   box-sizing: border-box;
   position: relative;
   padding: 0 40px;
-  width: 100%;
+  width: 100%
 }
 
 .card-header {
   border-bottom: solid 1px #ccc;
   padding: 0 0 15px 15px;
   margin: 20px 0 0;
-  font-size: 20px;
+  font-size: 20px
 }
 
 .all-cards {
   flex-grow: 1;
   margin: 15px;
-  border: solid 1px #CCC;
+  border: solid 1px #CCC
 }
 
 .wireframe-card {
   width: 100%;
-  height: 264px;
+  height: 264px
 }
 
 .card-1, 
 .card-7 {
-  width: 63%;
+  width: 63%
 }
 
 .card-2, 
@@ -37,7 +37,7 @@
 .card-4, 
 .card-5,
 .card-6 {
-  width: 30%;
+  width: 30%
 }
 
 @media screen and (max-width: 575px) {
@@ -45,12 +45,12 @@
   .card-3, 
   .card-4, 
   .card-5 {
-  width: 100%;
+  width: 100%
   }
 }
 
 @media screen and (max-width: 555px) {
   .cards-wrapper {
-    padding: 0;
+    padding: 0
   }
 }

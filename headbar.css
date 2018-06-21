@@ -1,7 +1,7 @@
 .header-wrapper {
   box-sizing: border-box;
   padding: 0 40px;
-  width: 100%;
+  width: 100%
 }
 
 nav {
@@ -11,32 +11,32 @@ nav {
   justify-content: flex-end;
   box-sizing: border-box;
   width: 100%;
-  background: #D1D2D3;
+  background: #D1D2D3
 }
 
 .wireframe-logo {
   border-radius: 100%;
   width: 90px;
   height: 88px;
-  padding: 30px;
+  padding: 30px
 }
 
 .menu {
   position: absolute;
   visibility: hidden;
   color: #6B6B6B;
-  font-size: 30px;
+  font-size: 30px
 }
 
 .menu-header,
 .nav-menu,
 .search-bar {
-  display: inline-block;
+  display: inline-block
 }
 
 .menu-header {
   width: 15%;
-  text-align: center;
+  text-align: center
 }
 
 .nav-menu {
@@ -46,19 +46,19 @@ nav {
   justify-content: space-evenly;
   box-sizing: border-box;
   color: #6B6B6B;
-  width: 55%;
+  width: 55%
 }
 
 .search-bar {
   width: 20%;
-  margin: auto;
+  margin: auto
 }
 
 .search-input {
   padding: 10px 18px;
   background-color: #F2F2F2;
   border: solid 1px #ABABAB;
-  font-size: 20px;
+  font-size: 20px
 }
 
 .search-input::placeholder {
@@ -66,77 +66,77 @@ nav {
   background-size: 20px;
   background-repeat: no-repeat;
   text-indent: 26px;
-  margin: auto 0;
+  margin: auto 0
 }
 
 .navlinks {
   margin: auto 0;
   color: #6B6B6B;
-  font-size: 20px;
+  font-size: 20px
 }
 
 .search {
   position: absolute;
   right: 20px;
-  width: 20px;
+  width: 20px
 }
 
 @media screen and (max-width: 1300px) {
   .menu-header {
-    width: 10%;
+    width: 10%
   }
 
   .nav-menu {
-    width: 65%;
+    width: 65%
   }
 
   .search-bar {
-    width: 25%;
+    width: 25%
   }
 }
 
 @media screen and (max-width: 1175px) {
   nav {
-    flex-direction: column;
+    flex-direction: column
   }
 
   .menu-header {
     margin: auto;
-    width: 50%;
+    width: 50%
   }
 
   .nav-menu,
   .search-bar {
-    width: 95%;
+    width: 95%
   }
 
   .wireframe-logo,
   .menu {
-    display: inline-block;
+    display: inline-block
   }
 
   .search-input {
     margin: 25px 0;
-    width: 95%;
+    width: 95%
   }
 }
 
 @media screen and (max-width: 888px) {
   .header-wrapper {
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 0
   }
 
   nav {
     flex-direction: column;
-    align-items: center;
+    align-items: center
   }
 
   .menu-header,
   .nav-menu,
   .search-bar {
     text-align: center;
-    width: 90%;
+    width: 90%
   }
 }
 
@@ -146,7 +146,7 @@ nav {
     flex-direction: column;
     text-align: left;
     margin: 0;
-    width: 100%;
+    width: 100%
   }
 
   .menu-header {
@@ -154,28 +154,29 @@ nav {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    cursor: pointer
   }
 
   .menu {
     position: relative;
     visibility: visible;
-    padding: 35px 26px;
+    padding: 35px 26px
   }
 
   .wireframe-logo {
     width: 75px;
     height: 75px;
-    padding: 17px;
+    padding: 17px
   }
 
   .nav-menu {
     padding: 30px 12px;
-    background-color: #E6E6E6;
+    background-color: #E6E6E6
   }
 
   .hidden-menu {
     position: absolute;
-    visibility: hidden;
+    visibility: hidden
   }
 
   .navlinks {
@@ -190,6 +191,6 @@ nav {
 
   .search-input {
     margin: 0;
-    padding: 10px 4px;
+    padding: 10px 4px
   }
 }
