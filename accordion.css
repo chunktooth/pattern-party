@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0 50px;
   width: 100%;
-  overflow: hidden;
+  overflow: hidden
 }
 
 ul.tabs {
@@ -22,24 +22,26 @@ ul.tabs {
   background-color: #F2F2F2;
   font-size: 17px;
   border-bottom: solid 1px #CCC;
+  cursor: pointer
 }
 
 .tab-list-pc.active {
   border: solid 1px #CCC;
   border-bottom: solid 1px #FFF;
   background-color: #FFF;
-  font-weight: bold;
+  font-weight: bold
 }
 
 .expand {
   display: none;
+  cursor: pointer
 }
 
 .tab-content {
   float: left;
   padding: 45px 20px 20px;
   border: solid 1px #CCC;
-  border-top: none;
+  border-top: none
 }
 
 .flex-wrapper {
@@ -47,47 +49,47 @@ ul.tabs {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 100%
 }
 
 .image-wrapper {
-  width: 30%;
+  width: 30%
 }
 
 .wireframe-box {
   width: 100%;
-  height: 350px;
+  height: 350px
 }
 
 .sagan-ipsum {
   display: inline-block;
   box-sizing: border-box;
   padding: 17px 0 17px 17px;
-  width: 70%;
+  width: 70%
 }
 
 .sagan-ipsum-header {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 20px
 }
 
 .header-line {
-  border-bottom: solid 1px #C2C2C2;
+  border-bottom: solid 1px #C2C2C2
 }
 
 .tab-list-mobile {
-  display: none;
+  display: none
 }
 
 @media screen and (max-width: 878px) {
   .sagan-ipsum {
     padding: 0;
-    width: 100%;
+    width: 100%
   }
 
  .image-wrapper {
     width: 100%;
-    text-align: center;
+    text-align: center
   }
 }
 
@@ -95,11 +97,11 @@ ul.tabs {
   .accordion-list,
   .sagan-ipsum {
     width: 100%;
-    text-align: justify;
+    text-align: justify
   }
 
   .flex-wrapper {
-    flex-direction: column;
+    flex-direction: column
   }
 }
 
@@ -110,7 +112,7 @@ ul.tabs {
   }
 
   .accordion-list {
-    padding: 0;
+    padding: 0
   }
 
   .tab-list-mobile {
@@ -121,7 +123,7 @@ ul.tabs {
     color: #666666;
     font-size: 20px;
     border-bottom: none;
-    border: solid 1px #F2F2F2;
+    border: solid 1px #F2F2F2
   }
 
   .tab-list-mobile.active {
@@ -131,17 +133,17 @@ ul.tabs {
     background: white;
     border: solid 1px #CCC;
     border-left: none;
-    border-right: none;
+    border-right: none
   }
 
   .tab-list-mobile p {
     float: left;
-    margin: 24px;
+    margin: 24px
   }
 
   .tab-anchor {
     position: relative;
-    right: 40%;
+    right: 40%
   }
 
   .expand {
@@ -150,14 +152,14 @@ ul.tabs {
     margin: 21px;
     color: #666666;
     font-size: 23px;
-    font-weight: bold;
+    font-weight: bold
   }
 
   .tab-content {
-    padding: 0;
+    padding: 0
   }
 
   .sagan-ipsum {
-    padding: 0 25px;
+    padding: 0 25px
   }
 }
